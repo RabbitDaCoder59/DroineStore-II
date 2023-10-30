@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Market Container */
+.marketItem {
+  height: 100%;
+  min-height: 35rem;
+  @apply p-5 bg-white w-quater mt-28 border border-gray-300;
+}
+.marketItemBox {
+  @apply flex justify-center;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  min-height: 285px;
+  max-width: 285px;
+  @apply -mb-18 pb-2;
+}
+
+.marketItemCard li {
+  @apply mb-10 pb-6;
+}
+/* Second market items cards  */
+.marketItemTwo {
+  height: 100%;
+  min-height: 35rem;
+  box-shadow: 0 12px 0 -6px rgba(0, 0, 0, 0.04);
+  @apply p-5 bg-white w-quater  border border-gray-300 my-10;
+}
+.marketItemTwoBox {
+  @apply flex justify-center;
+}
+.marketItemTwoCard {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-start;
+}
+.marketItemTwoCard li {
+  @apply mb-6 pb-5;
+}
+
+.image-container {
+  min-height: 285px;
+  max-width: 285px;
+  @apply mb-2 relative w-full h-full;
+}
+
+.hover-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.78s ease-in-out;
+}
+
+.hover-image:last-child {
+  opacity: 0; /* Initially hide the second image */
+}
+
+.image-container:hover .hover-image:first-child {
+  opacity: 0; /* Hide the first image on hover */
+}
+
+.image-container:hover .hover-image:last-child {
+  opacity: 1; /* Display the second image on hover */
+}
+
+/* Market item Text */
+.marketTitle {
+  @apply flex items-center;
+}
+.marketTitle h1 {
+  @apply font-bold text-2xl;
+}
+.marketTitle a {
+  @apply text-blue font-bold text-base ml-5;
+}
+.marketItemDescription {
+  @apply text-start pl-5 py-4;
+}
+.rating {
+  @apply flex mb-1;
+}
+.star svg {
+  @apply w-5 text-primary-300;
+}
+.Description {
+  @apply text-base font-semibold text-secondary-200 block mb-1;
+}
+.price {
+  @apply font-inter font-bold text-sm text-secondary-300;
+}
+.price del {
+  @apply text-primary-400 pr-1;
+}
+.saleCartWrapper {
+  @apply absolute top-2 left-3;
+}
+.saleCartItem {
+  @apply flex justify-between items-center;
+}
+.sale {
+  @apply text-gray-900 text-sm bg-white w-16 h-7 flex justify-center items-center rounded-full drop-shadow-md font-inter cursor-pointer;
+}
+
+.Itemcart {
+  @apply absolute left-56 w-8 h-8 bg-white items-center flex justify-center rounded-full hidden drop-shadow-md;
+}
+.Itemcart .cartIcon {
+  @apply text-2xl text-gray-500 hover:text-black;
+}
+.marketItemImg:hover .Itemcart {
+  @apply flex;
+}

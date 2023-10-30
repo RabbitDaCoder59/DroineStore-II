@@ -1,0 +1,79 @@
+/* Banner two */
+.shopBanner {
+  @apply my-2   lg:my-8 w-full h-full;
+}
+.shopBannerWrapper {
+  @apply flex justify-center w-full h-full;
+}
+.shopBannerBox {
+  @apply w-full h-full  min-h-48 flex justify-center items-center px-3;
+}
+.shopBannerCard {
+  @apply relative  h-78 w-full lg:w-97;
+}
+.shopBannerCard:first-child {
+  background-image: linear-gradient(180deg, #f1f2f6 85%, #00000000 85%);
+}
+.shopBannerCard:nth-child(2) {
+  background-image: linear-gradient(180deg, #e8ebed 85%, #00000000 85%);
+  @apply ml-3;
+}
+.shopBannerCard:last-child {
+  background-image: linear-gradient(180deg, #f8edd1 85%, #00000000 85%);
+  @apply ml-3;
+}
+
+.shopbannerImg img {
+  @apply absolute top-7 right-5  w-18 lg:w-36;
+}
+.shopbannerImg .clipper {
+  @apply w-22;
+}
+.shopBannerContent {
+  @apply flex flex-col  p-5 z-10;
+}
+.shopBannerContent h2 {
+  @apply font-semibold text-secondary-200 text-4.5xl mb-1 lg:mb-4;
+}
+.shopBannerContent .contentPrice {
+  @apply text-secondary-300 mb-1 lg:mb-4;
+}
+.shopBannerContent a {
+  @apply text-blue font-bold mb-2 pb-4 z-30;
+}
+
+/* brand deal  */
+.brandDealCard {
+  @apply h-72 w-78 lg:h-extraLgH lg:w-extraLgW   font-poppins;
+}
+.brandDealCard img {
+  @apply w-full h-full;
+}
+.brandDealCard:first-child {
+  @apply bg-white;
+}
+.brandContent {
+  @apply p-4 lg:p-9;
+}
+.brandContent h4 {
+  @apply uppercase text-sm font-semibold text-secondary-400 mb-6;
+}
+.brandContent h1 {
+  @apply text-xl lg:text-4xl font-semibold text-secondary-200 mb-5;
+}
+.brandContent a {
+  @apply text-blue font-semibold;
+}
+
+/* Top brands */
+.topBrandWrapper {
+  @apply flex justify-center items-center mx-5;
+}
+
+.brandsCard {
+  @apply w-36 lg:w-50 h-24 flex justify-center bg-white border lg:border-r  border-gray-300;
+}
+
+.brandsCard img {
+  @apply w-16;
+}

@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navLinks {
+  @apply flex items-center;
+}
+.navLinks li {
+  @apply ml-10;
+}
+.navLinks li:nth-child(1) {
+  @apply ml-0;
+}
+.navLinks li a {
+  @apply text-white text-lg font-bold;
+}
+
+.icon {
+  @apply text-2.5xl text-white;
+}
+
+#hidden {
+  @apply hidden;
+}
+
+.hamburger-react {
+  @apply text-white;
+}
+span.hamburger-react {
+  @apply text-black;
+}
+li a {
+  @apply text-blue;
+}
+.SubNav {
+  @apply relative;
+}
+.SubNav:hover .productsMenu {
+  @apply block;
+}
+.productsMenu {
+  @apply absolute top-6 bg-blue h-44 w-56 py-0.5 px-2 hidden z-40;
+}
+.productsMenu li {
+  @apply ml-0 pb-3;
+}
+.productsMenu li a {
+  @apply text-center text-base;
+}
+input {
+  @apply outline-none border-none;
+}

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Subscribe */
+.SubscribeCard {
+  @apply flex items-center w-78 h-16 mb-9 lg:mb-0;
+}
+.svgBox svg {
+  @apply w-14 text-secondary-200;
+}
+.SubscribeCard form {
+  @apply flex flex-col lg:flex-row justify-center items-center;
+}
+.subscribeForm input {
+  @apply lg:w-84 w-full  h-14 mb-6 lg:mb-0 bg-slate-100  px-3 ml-0 lg:ml-8;
+  border: 1px solid gray;
+}
+.subscribeForm input::placeholder {
+  @apply text-secondary-100;
+}
+.subscribeForm button {
+  @apply w-full lg:w-44 h-12 bg-button-100  text-lg capitalize text-white font-semibold ml-0 lg:ml-10;
+}
+/* Footer */
+footer {
+  @apply w-full  h-full min-h-78  border-t border-gray-300 bg-white py-6;
+}
+.footerCard {
+  @apply w-68  h-full min-h-16  py-12 lg:mb-0 flex flex-col justify-center lg:justify-start;
+}
+.footerCard img {
+  @apply lg:w-36;
+}
+.footerTitle {
+  @apply text-xl font-semibold text-secondary-200 mb-12 text-center lg:text-start;
+}
+
+.footerLinks {
+  @apply text-center lg:text-start;
+}

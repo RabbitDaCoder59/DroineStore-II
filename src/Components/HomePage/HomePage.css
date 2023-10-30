@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.HomePageSec {
+  @apply w-full h-fit;
+}
+
+.imgBox {
+  background: url("https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-hero-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  zoom: 1.335;
+  width: 100%;
+  max-width: 3000px;
+  height: 100%;
+  min-height: 35rem;
+
+  @apply flex items-baseline justify-center lg:justify-end lg:px-8 pt-32 lg:pt-24;
+}
+.contentWrapper {
+  @apply px-5;
+}
+.contentBox {
+  @apply bg-white w-full h-full lg:w-78 py-3  px-5 lg:px-6 lg:py-8;
+}
+.content {
+  @apply mb-4;
+}
+.content h2 {
+  @apply text-sm lg:text-2xl text-secondary-200 font-bold mb-5;
+}
+.content p {
+  @apply text-secondary-100 text-xs lg:text-sm;
+}
+.contentImg {
+  @apply mb-2 lg:mb-5 w-20;
+}
+.shopNow {
+  @apply text-blue font-bold text-xs;
+}
+
+/* Market card */
+.marketCardWrapper {
+  @apply flex justify-center;
+}
+.marketCardBox {
+  @apply bg-white w-quater lg:absolute  lg:-bottom-28 my-9 px-4 py-7 lg:pt-7 border border-gray-300;
+}
+.marketWrapper {
+  @apply grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2;
+}
+.marketCard:nth-last-child(1) {
+  @apply flex  items-start lg:items-center lg:border-r-0 mb-4 mr-4;
+}
+.marketCard {
+  @apply flex  items-start lg:items-center border-gray-300 lg:border-r mb-4 mr-4;
+}
+.marketCardIcon {
+  @apply text-3xl text-blue;
+}
+
+.marketCardContent {
+  @apply lg:ml-3;
+}
+.marketCardContent h2 {
+  @apply font-bold text-sm text-secondary-200;
+}
+.marketCardContent p {
+  @apply text-sm text-secondary-100;
+}
